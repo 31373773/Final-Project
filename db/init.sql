@@ -1,4 +1,3 @@
-
 CREATE DATABASE citiesData;
 use citiesData;
 
