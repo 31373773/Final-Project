@@ -21,7 +21,7 @@ Added at bottom row
 ## Delete Data
 ![Delete Data](screenshots/Delete.png)
 
-# Part 2
+
 
 
 
