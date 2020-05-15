@@ -25,7 +25,15 @@ Added at bottom row
 ![API Load](screenshots/API.png)
 
 # Part 2
- 
+ ## Postman Browse
+![Postman Browse](screenshots/browse.png)
+
+## Add Data
+![Add Data](screenshots/AddNew.png)
+![Data Added](screenshots/AddNew2.png)
+
+## API Load
+![API Load](screenshots/API.png)
 
 
 
