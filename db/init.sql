@@ -2,6 +2,7 @@ CREATE DATABASE ZillowData;
 use ZillowData;
 
 CREATE TABLE IF NOT EXISTS TableZillow (
+    `id` int AUTO_INCREMENT,
     `Index` INT,
     `Living_Space_sq_ft` INT,
     `Beds` INT,
@@ -11,7 +12,8 @@ CREATE TABLE IF NOT EXISTS TableZillow (
     `List_Price` INT
     PRIMARY KEY (`id`)
 );
-INSERT INTO TableZillow(Indx,LivingSpace,Beds,Baths,Zip,Yr,LstPrice) VALUES
+
+INSERT INTO TableZillow (Indx,LivingSpace,Beds,Baths,Zip,Yr,LstPrice) VALUES
     (1,2222,3,3.5,32312,1981,250000),
     (2,1628,3,2,32308,2009,185000),
     (3,3825,5,4,32312,1954,399000),
