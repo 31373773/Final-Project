@@ -1,7 +1,7 @@
 # Project Description
 This project is my final project part 1 and 2. 
 
-#Part 1
+# Part 1
 
 ## New Data Output
 ![New Data Output](screenshots/NewData.png)
