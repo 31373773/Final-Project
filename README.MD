@@ -32,8 +32,7 @@ Added at bottom row
 ![Add Data](screenshots/AddNew.png)
 ![Data Added](screenshots/AddNew2.png)
 
-## API Load
-![API Load](screenshots/API.png)
+
 
 
 
