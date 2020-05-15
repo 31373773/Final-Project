@@ -9,3 +9,6 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 # HTML Screenshot
 ![HTML output](screenshots/html.png)
+
+# New Data Output
+![New Data Output](screenshots/NewData.png)

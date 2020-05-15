@@ -44,11 +44,11 @@ def form_edit_get(house_id):
 @app.route('/edit/<int:house_id>', methods=['POST'])
 def form_update_post(house_id):
     cursor = mysql.get_db().cursor()
-    inputData = (request.form.get('Indx'), request.form.get('LivingSpace'), request.form.get('Beds'),
+    inputData = (request.form.get('Indx'), request.form.get('Living_Space_sq_ft'), request.form.get('Beds'),
                  request.form.get('Baths'), request.form.get('Zip'),
-                 request.form.get('Yr'), request.form.get('LstPrice'), house_id)
-    sql_update_query = """UPDATE tblCitiesImport t SET t.fldName = %s, t.fldLat = %s, t.fldLong = %s, t.fldCountry = 
-    %s, t.fldAbbreviation = %s, t.fldCapitalStatus = %s, t.fldPopulation = %s WHERE t.id = %s """
+                 request.form.get('Year'), request.form.get('List_Price'), house_id)
+    sql_update_query = """UPDATE TableZillow t SET t.Indx = %s, t.Living_Space_sq_ft = %s, t.Beds = %s, t.Baths = 
+    %s, t.Zip = %s, t.Year = %s, t.List_Price = %s WHERE t.id = %s """
     cursor.execute(sql_update_query, inputData)
     mysql.get_db().commit()
     return redirect("/", code=302)
@@ -61,10 +61,10 @@ def form_insert_get():
 @app.route('/houses/new', methods=['POST'])
 def form_insert_post():
     cursor = mysql.get_db().cursor()
-    inputData = (request.form.get('Indx'), request.form.get('LivingSpace'), request.form.get('Beds'),
+    inputData = (request.form.get('Indx'), request.form.get('Living_Space_sq_ft'), request.form.get('Beds'),
                  request.form.get('Baths'), request.form.get('Zip'),
-                 request.form.get('Yr'), request.form.get('LstPrice'))
-    sql_insert_query = """INSERT INTO TableZillow (Indx,LivingSpace,Beds,Baths,Zip,Yr,LstPrice) VALUES (%s, %s,%s, %s,%s, %s,%s) """
+                 request.form.get('Year'), request.form.get('List_Price'))
+    sql_insert_query = """INSERT INTO TableZillow (Indx, Living_Space_sq_ft,Beds,Baths,Zip,Year,List_Price) VALUES (%s, %s,%s, %s,%s, %s,%s) """
     cursor.execute(sql_insert_query, inputData)
     mysql.get_db().commit()
     return redirect("/", code=302)
