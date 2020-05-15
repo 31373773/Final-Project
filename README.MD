@@ -12,3 +12,8 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 
 # New Data Output
 ![New Data Output](screenshots/NewData.png)
+
+# Homepage
+![Homepage Output](screenshots/Homepage.png)
+
+
