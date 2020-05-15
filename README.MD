@@ -16,4 +16,15 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 # Homepage
 ![Homepage Output](screenshots/Homepage.png)
 
+# Add Data
+![Homepage Output]()
+
+# Change Data
+![Homepage Output]()
+
+# Delete Data
+![Homepage Output]()
+
+
+
 
