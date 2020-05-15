@@ -18,7 +18,7 @@ mysql.init_app(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    user = {'username': 'Zillow  Project'}
+    user = {'username': 'Steph'}
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM TableZillow')
     result = cursor.fetchall()
@@ -53,7 +53,6 @@ def form_update_post(house_id):
     mysql.get_db().commit()
     return redirect("/", code=302)
 
-
 @app.route('/houses/new', methods=['GET'])
 def form_insert_get():
     return render_template('new.html', title='New House Form')
@@ -69,7 +68,6 @@ def form_insert_post():
     cursor.execute(sql_insert_query, inputData)
     mysql.get_db().commit()
     return redirect("/", code=302)
-
 
 @app.route('/delete/<int:house_id>', methods=['POST'])
 def form_delete_post(house_id):
