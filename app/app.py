@@ -106,7 +106,7 @@ def api_edit(house_id) -> str:
                  content['Baths'], content['Zip'],
                  content['Year'], content['List_Price'],house_id)
     sql_update_query = """UPDATE TableZillow t SET t.Indx = %s, t.Living_Space_sq_ft = %s, t.Beds = %s, t.Baths = 
-        %s, t.Zip = %s, t.Year = %s, t.List_Price = %s WHERE t.id = %s """
+    %s, t.Zip = %s, t.Year = %s, t.List_Price = %s  WHERE t.id = %s """
     cursor.execute(sql_update_query, inputData)
     mysql.get_db().commit()
     resp = Response(status=200, mimetype='application/json')
@@ -119,7 +119,7 @@ def api_add() -> str:
 
     cursor = mysql.get_db().cursor()
     inputData = (content['Indx'], content['Living_Space_sq_ft'], content['Beds'],
-                 content['Baths'], content['Zip'],
+                 content['Bathss'], content['Zip'],
                  content['Year'], request.form.get('List_Price'))
     sql_insert_query = """INSERT INTO TableZillow (Indx, Living_Space_sq_ft,Beds,Baths,Zip,Year,List_Price) VALUES (%s, %s,%s, %s,%s, %s,%s) """
     cursor.execute(sql_insert_query, inputData)
