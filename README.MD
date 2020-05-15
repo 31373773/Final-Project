@@ -30,7 +30,15 @@ Added at bottom row
 
 ## Add Data
 ![Add Data](screenshots/AddNew.png)
-![Data Added](screenshots/AddNew2.png)
+![Using Get](screenshots/Get.png)
+
+## Change Data 
+![Change Data](screenshots/Change Data.png) (price change)
+![Change Data](screenshots/Data Changed.png) 
+
+# Delete Data
+![Delete Data](screenshots/Data Deleted.png) 
+
 
 
 
