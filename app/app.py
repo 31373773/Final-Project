@@ -11,7 +11,7 @@ mysql = MySQL(cursorclass=DictCursor)
 app.config['MYSQL_DATABASE_HOST'] = 'db'
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
-app.config['MYSQL_DATABASE_PORT'] = 32000
+app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'ZillowData'
 mysql.init_app(app)
 
@@ -98,13 +98,13 @@ def api_retrieve(house_id) -> str:
     return resp
 
 
-@app.route('/api/v1/cities/', methods=['POST'])
+@app.route('/api/v1/houses/', methods=['POST'])
 def api_add() -> str:
     resp = Response(status=201, mimetype='application/json')
     return resp
 
 
-@app.route('/api/v1/houses/<int:city_id>', methods=['PUT'])
+@app.route('/api/v1/houses/<int:house_id>', methods=['PUT'])
 def api_edit(house_id) -> str:
     resp = Response(status=201, mimetype='application/json')
     return resp
