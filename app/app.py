@@ -38,7 +38,7 @@ def form_edit_get(house_id):
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM TableZillow WHERE id=%s', house_id)
     result = cursor.fetchall()
-    return render_template('edit.html', title='Edit Form', house =result[0])
+    return render_template('edit.html', title='Edit Form', house=result[0])
 
 
 @app.route('/edit/<int:house_id>', methods=['POST'])
@@ -52,6 +52,7 @@ def form_update_post(house_id):
     cursor.execute(sql_update_query, inputData)
     mysql.get_db().commit()
     return redirect("/", code=302)
+
 
 @app.route('/houses/new', methods=['GET'])
 def form_insert_get():
@@ -68,6 +69,7 @@ def form_insert_post():
     cursor.execute(sql_insert_query, inputData)
     mysql.get_db().commit()
     return redirect("/", code=302)
+
 
 @app.route('/delete/<int:house_id>', methods=['POST'])
 def form_delete_post(house_id):
