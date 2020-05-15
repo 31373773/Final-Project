@@ -3,21 +3,40 @@
 <form action="/edit/{{house.id}}" method="post">
     <div class="row">
         <div class="col">
-            <label for="Indx">Index</label>
-            <input id="Indx" type="text" class="form-control" placeholder="Indx" name="Indx" value="{{house.Indx}}">
+            <label for="Indx">Index </label>
+            <input id="Indx" type="text" class="form-control" placeholder="Index " name="Indx" value="{{house.Indx}}">
         </div>
         <div class="col">
-            <label for="List_Price">List Price ($)</label>
-            <input id="List_Price" type="text" class="form-control" placeholder="List Price"
-                   name="List_Price" value="{{house.List_Price}}">
+            <label for="Living_Space_sq_ft">Living Space (sq ft) </label>
+            <input id="Living_Space_sq_ft" type="text" class="form-control" placeholder="Living Space sq ft"
+                   name="Living_Space_sq_ft" value="{{house.Living_Space_sq_ft}}">
         </div>
-
+        <div class="col">
+            <label for="Beds">Beds </label>
+            <input id="Beds" type="text" class="form-control" placeholder="Beds" name="Beds" value="{{house.Beds}}">
+        </div>
     </div>
 
     <div class="row">
         <div class="col">
-            <label for="Year">Year</label>
-            <input id="Year" type="text" class="form-control" placeholder="Year" name="Year" value="{{house.Year}}">
+            <label for="Baths">Baths </label>
+            <input id="Baths" type="text" class="form-control" placeholder="City Latitude" name="Baths" value="{{house.Baths}}">
+        </div>
+        <div class="col">
+            <label for="Zip">Zip </label>
+            <input id="Zip" type="text" class="form-control" placeholder="Zip" name="Zip" value="{{house.Zip}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Year">Year </label>
+
+            <input id="Year" type="text" class="form-control" placeholder="Year"
+                   name="Year" value="{{house.Year}}">
+        </div>
+        <div class="col">
+            <label for="List_Price">List Price</label>
+            <input id="List_Price" type="text" class="form-control" placeholder="List Price" name="List_Price" value="{{house.List_Price}}">
         </div>
     </div>
     <button type="submit" class="btn btn-success">Save</button>
