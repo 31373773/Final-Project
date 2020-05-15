@@ -2,14 +2,14 @@ CREATE DATABASE ZillowData;
 use ZillowData;
 
 CREATE TABLE IF NOT EXISTS TableZillow (
-    `id` int AUTO_INCREMENT
+    `id` int AUTO_INCREMENT,
     `Indx` INT,
     `Living_Space_sq_ft` INT,
     `Beds` INT,
     `Baths` NUMERIC(2, 1),
     `Zip` INT,
     `Year` INT,
-    `List_Price` INT
+    `List_Price` INT,
     PRIMARY KEY(`id`)
 );
 

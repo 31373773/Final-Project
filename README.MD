@@ -10,19 +10,22 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 # HTML Screenshot
 ![HTML output](screenshots/html.png)
 
-# New Data Output
+#Part 1
+
+## New Data Output
 ![New Data Output](screenshots/NewData.png)
 
-# Homepage
+## Homepage
 ![Homepage Output](screenshots/Homepage.png)
 
-# Add Data
+## Add Data
 ![Homepage Output]()
 
-# Change Data
-![Homepage Output]()
+## Change Data
+![Edit Data](screenshots/edit1.png)
+![Edit Data](screenshots/edit2.png)
 
-# Delete Data
+## Delete Data
 ![Homepage Output]()
 
 
