@@ -33,11 +33,11 @@ Added at bottom row
 ![Using Get](screenshots/Get.png)
 
 ## Change Data 
-![Change Data](screenshots/Change Data.png) (price change)
-![Change Data](screenshots/Data Changed.png) 
+![Change Data](screenshots/ChangeData.png) (price change)
+![Change Data](screenshots/DataChanged.png) 
 
 # Delete Data
-![Delete Data](screenshots/Data Deleted.png) 
+![Delete Data](screenshots/DataDeleted.png) 
 
 
 
